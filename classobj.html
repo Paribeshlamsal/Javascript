@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class And Object</title>
+</head>
+
+<body>
+    <h1> Class and Object</h1>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+            greet() {
+                console.log(`Hello, my name is $(this.name) and I am $(this.age) years old. `);
+            }
+        }
+        let person1 = new Person('Radha', 25);
+        let person2 = new Person('Krishna', 28);
+        person1.greet();
+        person2.greet();
+
+        let rectangle ={width:10,height:20};
+        console.log(rectangle.width);
+        console.log(rectangle.height);
+        
+
+    </script>
+
+</body>
+
+</html>
+<!--Create a registration form with following validations 
+Name is required and must be at least 8 characters
+email must be of valid email format
+password and confirm password must match
+the terms and conditons must be match
+phone number must be 10 digits
+all fields must be required
+
+
+-->

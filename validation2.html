@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation with regular Expression</title>
+    <style>
+        input {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="return validate()">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter your email" id="username">
+        <label for="phone">Phone number</label>
+        <input type="text" placeholder="Enter your phone" id="phone">
+        <label for="pass">Password</label>
+        <input type="text" placeholder="Enter your password" id="pass">
+        <label for="cpass">Confirm password</label>
+        <input type="text" placeholder="Confirm your password" id="cpass">
+        <input type="submit" value="Register">
+        
+    </form>
+    <script>
+        function validate()
+        {
+            let email = document.getElementById('username').value;
+            let phone = document.getElementById('phone').value;
+            let pass = document.getElementById('pass').value;
+            let cpass = document.getElementById('cpass').value;
+
+            let phonepattern = /^(97|98)\d{8}$/;
+            let checkphone=phondepattern.test(phone);
+            if(!checkphone)
+        {
+            alert('Invalid phone number');
+            return false;
+        }
+            let emailpattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let checkemail=emailpattern.test(username);
+            if(!checkemail)
+        {
+            alert('Invalid email');
+            return false;
+
+        }
+            
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
